@@ -1,2 +1,0 @@
-# Kotlin
-a kotlin project
