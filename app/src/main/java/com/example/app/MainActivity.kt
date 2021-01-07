@@ -33,13 +33,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         et_password.setText("password")
 
         val btn_login: Button = findViewById<Button>(R.id.btn_login)
-        val findViewById: Button? = delegate.findViewById<Button>(R.id.btn_login)
+        val findViewById: CodeView? = delegate.findViewById<CodeView>(R.id.code_view)
         btn_login.setOnClickListener(this)
     }
 
 
     override fun onClick(v: View?) {
-
         if (v is CodeView) {
             v.updateCode()
         } else if (v is Button) {
